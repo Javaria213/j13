@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+<style>
+.form{
+	width: 50%;
+	background-color:  #ffcccc;
+
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing:border-box; 
+}
+input[type=email]{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border-radius: 5px;
+	border:1px solid black;
+	box-sizing: border-box; 
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  border:1px solid black;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:#cc0066;
+}
+
+div {
+  border-radius: 5px;
+  background-color:  #ff6666 ;
+  padding: 20px;
+  margin: 0 auto;
+
+}
+</style>
+<body>
+
+<h1 style="background-color: black;color:white;" ><center>*~*Using CSS to style an HTML Form*~*<br></center></h1>
+<br> 
+
+<div class="form">
+  <form action="">
+    <label for="fname">Your First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+
+    <label for="for">Your Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+    <label for="Email">  Email</label>
+    <input type="Email" id="lname" name="  Email" placeholder=" Enter Your Email... ">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="usa">England</option>
+  </select>
+
+  
+      <label for="Courses"> Courses</label>
+      <select id="Courses" name="Courses">
+      <option value="Graphic Design">Graphic Design</option>
+      <option value="Telecommunication Technician">Telecommunication Technician</option>
+      <option value="Mobile Application Development">Mobile Application Development</option>
+      <option value="Networking Technologies ">Networking Technologies </option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+	
+</body>
+</html>
