@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calculator</title>
+</head>
+<style type="text/css">
+
+
+	.button{
+		width: 91px;
+		height: 55px;
+		font-size: 30px;
+		margin: 5px;
+		cursor: pointer;
+		background-color:  #ff6666;
+		color: black;
+
+	}
+
+	.textview{
+		width: 380px;
+		margin: 10px;
+		font-size: 30px;
+		padding: 10px;
+		color:black;
+		margin-left: 10px;
+	}
+	.main{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background: #b30059;
+		transform: translateX(-50%) translateY(-50%);
+
+	}
+	
+
+</style>
+<body>
+
+	<h1 ><center>  JavaScript Calculator</center></h1>
+	
+	<div class="main" >
+		<form name="form">
+			<input type="text" class=" textview" name="textview">
+		
+          <table>
+          	<tr>
+          		<td><input class="button" type="reset" value="CE" onclick="form.textview.value = 'reset' " ></td>
+          		<td><input class="button"type="button" value="0" onclick="form.textview.value += '0' "></td>
+          		<td><input style="background-color: #ff9900" class="button"type="button" value="/" onclick="form.textview.value += '/'"></td>
+          		<td><input  style="background-color: #ff9900" class="button"type="button" value="*" onclick="form.textview.value += '*' "></td>
+          	</tr>
+          	<tr>
+          		<td><input class="button"type="button" value="7" onclick="form.textview.value += '7' "></td>
+          		<td><input class="button"type="button" value="8" onclick="form.textview.value += '8' "></td>
+          		<td><input class="button"type="button" value="9" onclick="form.textview.value += '9' "></td>
+          		<td><input   style="background-color: #ff9900" class="button"type="button" value="-" onclick="form.textview.value += '-' "></td>
+          	</tr>
+          	<tr>
+          		<td><input class="button"type="button" value="4" onclick="form.textview.value += '4' " ></td>
+          		<td><input class="button"type="button" value="5" onclick="form.textview.value += '5' "></td>
+          		<td><input class="button"type="button" value="6" onclick="form.textview.value += '6' "></td>
+          		<td><input   style="background-color: #ff9900" class="button"type="button" value="+" onclick="form.textview.value += '+' "></td>
+          	</tr>
+          	<tr>
+          		<td><input class="button"type="button" value="1" onclick="form.textview.value += '1' "></td>
+          		<td><input class="button"type="button" value="2" onclick="form.textview.value += '2' "></td>
+          		<td><input class="button"type="button" value="3" onclick="form.textview.value += '3' "></td>
+          		<td><input style="background-color: #ff9900" class="button" type="button" value="=" onclick="form.textview.value = eval(form.textview.value)"></td>
+          	</tr>
+          	
+
+          </table>
+
+</form>
+
+	</div>	
+
+</body>
+</html>
